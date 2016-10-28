@@ -34,7 +34,7 @@ function createWindow() {
 
 	mainWindow.setMenu(null);
 	mainWindow.loadURL('file://' + __dirname + '/app/index.html');
-	//mainWindow.webContents.openDevTools();
+	mainWindow.webContents.openDevTools();
 
 	mainWindow.on('close', function(e) {
 		if (willQuitApp || process.platform !== 'darwin') {

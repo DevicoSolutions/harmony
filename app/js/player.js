@@ -142,8 +142,8 @@ function playPause() {
 		player.elPlayer.play();
 		if (g.playing) {
 			g.isSongPlaying = true;
-			playPauseIcon.remove("icon-play");
-			playPauseIcon.add("icon-pause");
+			// playPauseIcon.remove("icon-play");
+			// playPauseIcon.add("icon-pause");
 			if (mprisPlayer) mprisPlayer.playbackStatus = 'Playing';
 		} else {
 			playByIndex(0);
@@ -151,8 +151,8 @@ function playPause() {
 	} else {
 		player.elPlayer.pause();
 		g.isSongPlaying = false;
-		playPauseIcon.remove("icon-pause");
-		playPauseIcon.add("icon-play");
+		// playPauseIcon.remove("icon-pause");
+		// playPauseIcon.add("icon-play");
 		if (mprisPlayer) mprisPlayer.playbackStatus = 'Paused';
 	}
 }
